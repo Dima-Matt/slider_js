@@ -30,7 +30,6 @@ nextBtn.addEventListener('click', function() {
     if (orderImg > images.length - 1) {
         orderImg = 0;
     }
-
     
     scrollSlider();
 
@@ -52,6 +51,28 @@ function scrollSlider() {
     sliderLine.style.transform = `translate(-${value}px)`;
 }
 
+
+// DOTS
+
+dots.forEach((item) => {
+
+    
+    item.addEventListener('click', getImageIndex);
+})
+
+
+function getImageIndex() {
+    
+    
+    for (let i = 0; i < images.length; i++) {
+        orderImg = i; 
+        
+       
+    }
+    scrollSlider();
+    orderImg = 0;
+    
+}
 
 
 
