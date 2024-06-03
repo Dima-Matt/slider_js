@@ -54,25 +54,43 @@ function scrollSlider() {
 
 // DOTS
 
-dots.forEach((item) => {
 
-    
-    item.addEventListener('click', getImageIndex);
-})
-
-
-function getImageIndex() {
-    
-    
-    for (let i = 0; i < images.length; i++) {
-        orderImg = i; 
-        
-       
-    }
-    scrollSlider();
-    orderImg = 0;
+for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener('click', () => {
+        orderImg = i;
+        scrollSlider();
+    });
     
 }
+
+
+
+
+
+
+
+
+
+
+// dots.forEach((item) => {
+
+    
+//     item.addEventListener('click', getImageIndex);
+// })
+
+
+// function getImageIndex() {
+    
+    
+//     for (let i = 0; i < images.length; i++) {
+//         orderImg = i; 
+        
+       
+//     }
+//     scrollSlider();
+//     orderImg = 0;
+    
+// }
 
 
 
